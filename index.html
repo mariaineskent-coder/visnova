@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisNova | Productos de Bienestar & Wellness</title>
+    <meta name="description" content="VisNova - Descubre productos naturales de bienestar diseñados para revitalizar tu cuerpo, calmar tu mente y armonizar tu vida.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo" id="brand-logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">VisNova</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="cart-btn" aria-label="Ver carrito">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section class="hero" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="tagline">✦ Bienestar Holístico & Natural</span>
+                    <h1 class="hero-title">Revitaliza tu equilibrio diario con <em>VisNova</em></h1>
+                    <p class="hero-description">
+                        Fórmulas limpias, ingredientes botánicos y suplementos esenciales creados para nutrir tu cuerpo, serenar tu mente y potenciar tu vitalidad.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#productos" class="btn btn-primary">Explorar Colección</a>
+                        <a href="#beneficios" class="btn btn-secondary">Conócenos</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Ingredientes Naturales</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Eco</span>
+                            <span class="stat-label">Envases Sostenibles</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Cruelty Free</span>
+                            <span class="stat-label">Libre de crueldad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">✨</div>
+                        <h3>Pausa Consciente</h3>
+                        <p>Diseñado para acompañar tus rituales de calma, descanso y autocuidado.</p>
+                        <div class="visual-pill">#VisNovaWellness</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filtros y Catálogo de Productos -->
+        <section class="products-section" id="productos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Nuestra Colección</span>
+                    <h2>Esenciales de Bienestar</h2>
+                    <p>Cuidadosamente formulados para elevar tu rutina diaria.</p>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <!-- Producto 1 -->
+                    <article class="product-card">
+                        <div class="product-badge">Top Ventas</div>
+                        <div class="product-icon-wrap">
+                            <span class="product-emoji">🌱</span>
+                        </div>
+                        <div class="product-category">Aromaterapia</div>
+                        <h3 class="product-name">Bruma Botánica Calmante</h3>
+                        <p class="product-desc">Aceites de lavanda francesa, bergamota y manzanilla para inducir un sueño profundo.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$24.00</span>
+                            <button class="btn-add-cart" data-name="Bruma Botánica Calmante" data-price="24.00">
+                                Añadir +
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="product-card">
+                        <div class="product-badge">Nutrición</div>
+                        <div class="product-icon-wrap">
+                            <span class="product-emoji">✨</span>
+                        </div>
+                        <div class="product-category">Suplementos</div>
+                        <h3 class="product-name">Magnesio & Ashwagandha</h3>
+                        <p class="product-desc">Complejo adaptogénico que ayuda a regular los niveles de estrés y revitalizar la energía celular.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$32.50</span>
+                            <button class="btn-add-cart" data-name="Magnesio & Ashwagandha" data-price="32.50">
+                                Añadir +
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="product-card">
+                        <div class="product-badge">Ritual</div>
+                        <div class="product-icon-wrap">
+                            <span class="product-emoji">🍵</span>
+                        </div>
+                        <div class="product-category">Infusiones</div>
+                        <h3 class="product-name">Té Herbal Detox & Glow</h3>
+                        <p class="product-desc">Mezcla orgánica de hojas de menta, jengibre fresco y flor de hibisco antioxidante.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$18.00</span>
+                            <button class="btn-add-cart" data-name="Té Herbal Detox & Glow" data-price="18.00">
+                                Añadir +
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="product-card">
+                        <div class="product-badge">Cuidado Facial</div>
+                        <div class="product-icon-wrap">
+                            <span class="product-emoji">💧</span>
+                        </div>
+                        <div class="product-category">Skincare Natural</div>
+                        <h3 class="product-name">Serum Facial Glow Elixir</h3>
+                        <p class="product-desc">Aceite de rosa mosqueta prensado en frío con vitamina C botánica y escualano vegetal.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$38.00</span>
+                            <button class="btn-add-cart" data-name="Serum Facial Glow Elixir" data-price="38.00">
+                                Añadir +
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Beneficios -->
+        <section class="benefits-section" id="beneficios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">El Compromiso VisNova</span>
+                    <h2>¿Por qué elegir VisNova?</h2>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-box">
+                        <div class="benefit-icon">🌿</div>
+                        <h3>Pureza Garantizada</h3>
+                        <p>Sin parabenos, sulfatos ni aromas artificiales. Solo ingredientes limpios y activos.</p>
+                    </div>
+
+                    <div class="benefit-box">
+                        <div class="benefit-icon">🌎</div>
+                        <h3>Sostenibilidad Real</h3>
+                        <p>Embalajes reciclables, botellas de vidrio ámbar y procesos respetuosos con el entorno.</p>
+                    </div>
+
+                    <div class="benefit-box">
+                        <div class="benefit-icon">🔬</div>
+                        <h3>Respaldado por la Ciencia</h3>
+                        <p>Unión armoniosa entre la sabiduría botánica ancestral y la investigación moderna.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Newsletter / Contacto -->
+        <section class="newsletter-section" id="contacto">
+            <div class="container">
+                <div class="newsletter-card">
+                    <h2>Únete a la comunidad VisNova</h2>
+                    <p>Recibe guías de bienestar holístico, lanzamientos exclusivos y un <strong>10% de descuento</strong> en tu primera compra.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" id="email-input" placeholder="Ingresa tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">VisNova</span>
+                </div>
+                <p>Tu santuario de productos wellness para una vida equilibrada y consciente.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <a href="#hero">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#beneficios">Beneficios</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <p>hola@visnovawellness.com</p>
+                <p>Lunes a Viernes 9:00 - 18:00</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 VisNova Wellness. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Notificación Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
